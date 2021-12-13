@@ -17,18 +17,20 @@ let find = false;
 
 // Chiedo tramite un pormpt all'utente la sua mail
 
-const emailRequest = prompt("Inserisci la tua email");
+let emailRequest = prompt("Inserisci la tua email");
 
 // Utilizzo un ciclo for per verificare se il nome inserito è presente
 
 for (let i = 0; i < guests.length; i++) {
-  if (emailRequest.toLowerCase === guests[i].toLowerCase) {
+  if (emailRequest.toLowerCase() === guests[i].toLowerCase()) {
     find = true;
   }
 }
 
+console.log(find);
+
 if (find) {
-  console.log("benvenuto");
+  hookHtml.innerHTML = `Bene, la sua email <strong> ${emailRequest} </strong> fa parte della lista, benvenuto`;
 } else {
-  console.log("non puoi entrare");
+  hookHtml.innerHTML = `Hei, la sua email <strong> ${emailRequest} </strong> non è presente nella lista, non faccia il furbo!`;
 }
