@@ -56,13 +56,14 @@ const computerNum = Math.floor(Math.random() * 6 + 1);
 
 console.log(computerNum);
 
-
 // Creo un if con situazione di vittoria umana, pareggio o vittoria macchina
 
 if (playerNum > computerNum) {
   hooktwoHtml.innerHTML = `${playerNum} vince contro ${computerNum}, gli umani vincono contro le macchine, per ora...`;
+  hooktwoHtml.innerHTML += `<i class="fas fa-users"></i>`;
 } else if (playerNum === computerNum) {
   hooktwoHtml.innerHTML = `${computerNum} e ${playerNum}, è un pareggio, incredibile!`;
 } else {
   hooktwoHtml.innerHTML = `${computerNum} vince contro ${playerNum}, le macchine hanno preso il sopravvento!`;
+  hooktwoHtml.innerHTML += `<i class="fas fa-robot"></i>`
 }

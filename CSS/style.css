@@ -17,7 +17,7 @@ header,
 }
 
 main {
-    height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
 }
 
 section h2 {
@@ -25,9 +25,26 @@ section h2 {
   font-weight: bold;
 }
 
+/* JS hooks */
+
 .hook,
 .hook-2 {
   background-color: rgba(0, 0, 0, 0.293);
-  padding: 5px 5px;
   border-radius: 25px;
+}
+
+/* JS icon */
+
+.fa-users,
+.fa-robot {
+  padding: 0 20px;
+  font-size: 25px;
+}
+
+.fa-users {
+  color: green;
+}
+
+.fa-robot {
+  color: crimson;
 }
