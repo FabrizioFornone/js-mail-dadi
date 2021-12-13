@@ -52,6 +52,8 @@ const playerNum = Math.floor(Math.random() * 6 + 1);
 
 const computerNum = Math.floor(Math.random() * 6 + 1);
 
+// Creo un if con situazione di vittoria umana, pareggio o vittoria macchina
+
 if (playerNum > computerNum) {
   hooktwoHtml.innerHTML = `${playerNum} vince contro ${computerNum}, gli umani vincono contro le macchine, per ora...`;
 } else if (playerNum === computerNum) {
