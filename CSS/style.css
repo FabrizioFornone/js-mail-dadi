@@ -16,6 +16,11 @@ header,
   height: 80px;
 }
 
+header h1 {
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
 main {
   height: calc(100vh - 80px);
 }
