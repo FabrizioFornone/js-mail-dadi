@@ -10,8 +10,14 @@ body {
 }
 
 header,
-section div:nth-child(2) {
+.hook,
+.hook-2 {
   color: #fff;
+  height: 80px;
+}
+
+main {
+    height: calc(100vh - 80px);
 }
 
 section h2 {
@@ -19,7 +25,8 @@ section h2 {
   font-weight: bold;
 }
 
-section div:nth-child(2) {
+.hook,
+.hook-2 {
   background-color: rgba(0, 0, 0, 0.293);
   padding: 5px 5px;
   border-radius: 25px;
