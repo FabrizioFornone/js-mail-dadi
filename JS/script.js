@@ -42,13 +42,20 @@ if (find) {
 ------
 */
 
+// Creo un secondo aggancio con il DOM
+
+const hooktwoHtml = document.querySelector(".hook-2");
+
 // Genero randomicamente un numero da 1 a 6 per il Player e per il Computer
 
-const playerNum = Math.floor((Math.random() * 6) + 1);
+const playerNum = Math.floor(Math.random() * 6 + 1);
 
-const computerNum = Math.floor((Math.random() * 6) + 1);
+const computerNum = Math.floor(Math.random() * 6 + 1);
 
-
-
-
-
+if (playerNum > computerNum) {
+  hooktwoHtml.innerHTML = `${playerNum} vince contro ${computerNum}, gli umani vincono contro le macchine, per ora...`;
+} else if (playerNum === computerNum) {
+  hooktwoHtml.innerHTML = `${computerNum} e ${playerNum}, è un pareggio, incredibile!`;
+} else {
+  hooktwoHtml.innerHTML = `${computerNum} vince contro ${playerNum}, le macchine hanno preso il sopravvento!`;
+}
