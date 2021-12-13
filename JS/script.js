@@ -50,7 +50,12 @@ const hooktwoHtml = document.querySelector(".hook-2");
 
 const playerNum = Math.floor(Math.random() * 6 + 1);
 
+console.log(playerNum);
+
 const computerNum = Math.floor(Math.random() * 6 + 1);
+
+console.log(computerNum);
+
 
 // Creo un if con situazione di vittoria umana, pareggio o vittoria macchina
 
