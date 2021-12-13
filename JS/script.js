@@ -32,9 +32,9 @@ console.log(find);
 // Se è 'find' allora stampa il messaggio di benvenuto, altrimenti sbattilo fuori
 
 if (find) {
-  hookHtml.innerHTML = `Bene, la sua email <strong> ${emailRequest} </strong> fa parte della lista, benvenuto`;
+  hookHtml.innerHTML = `Bene, la sua email ${emailRequest} fa parte della lista, benvenuto`;
 } else {
-  hookHtml.innerHTML = `Hei, la sua email <strong> ${emailRequest} </strong> non è presente nella lista, non faccia il furbo!`;
+  hookHtml.innerHTML = `Hei, la sua email ${emailRequest} non è presente nella lista, non faccia il furbo!`;
 }
 
 /* 
