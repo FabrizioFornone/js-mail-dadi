@@ -29,8 +29,26 @@ for (let i = 0; i < guests.length; i++) {
 
 console.log(find);
 
+// Se è 'find' allora stampa il messaggio di benvenuto, altrimenti sbattilo fuori
+
 if (find) {
   hookHtml.innerHTML = `Bene, la sua email <strong> ${emailRequest} </strong> fa parte della lista, benvenuto`;
 } else {
   hookHtml.innerHTML = `Hei, la sua email <strong> ${emailRequest} </strong> non è presente nella lista, non faccia il furbo!`;
 }
+
+/* 
+------
+------
+*/
+
+// Genero randomicamente un numero da 1 a 6 per il Player e per il Computer
+
+const playerNum = Math.floor((Math.random() * 6) + 1);
+
+const computerNum = Math.floor((Math.random() * 6) + 1);
+
+
+
+
+
