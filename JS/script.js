@@ -48,11 +48,11 @@ const hooktwoHtml = document.querySelector(".hook-2");
 
 // Genero randomicamente un numero da 1 a 6 per il Player e per il Computer
 
-const playerNum = Math.floor(Math.random() * 6 + 1);
+const playerNum = Math.round(Math.random() * (6 - 1)) + 1;
 
 console.log(playerNum);
 
-const computerNum = Math.floor(Math.random() * 6 + 1);
+const computerNum = Math.round(Math.random() * (6 - 1)) + 1;
 
 console.log(computerNum);
 
